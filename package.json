@@ -1,9 +1,11 @@
 {
   "name": "city",
+  "homepage": "https://kanjamad.github.io/React.js-City-Tours",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "cra-template": "1.1.2",
+    "gh-pages": "^3.2.3",
     "node-sass": "4.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -13,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
